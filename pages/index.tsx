@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Button from '../common/components/Button'
+import Card from '../common/components/Card'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = ({btnStyle}) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,11 +16,15 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <Card className="card">
+                <h3>
+                  Prueba de card titulo
+                </h3>
+                <p>Prueba de cuerpo del card </p>
+          </Card>
 
+          <Button onClick={() => {}} title="prueba" type="button" {...btnStyle} />
+          
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -63,3 +69,13 @@ export default function Home() {
     </div>
   )
 }
+
+Home.defaultProps = {
+  btnStyle: {
+    minWidth: '152px',
+    minHeight: '45px',
+    fontSize: '14px',
+    fontWeight: '500',
+  },
+}
+export default Home;
