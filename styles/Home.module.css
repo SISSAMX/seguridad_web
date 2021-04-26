@@ -120,3 +120,15 @@
     flex-direction: column;
   }
 }
+
+.titulo{
+  font: 15px Helevetica, Arial, sans-serif;
+  background-color: azure;
+  padding: 200px;
+  text-align: center;
+  transition: 100ms ease-in background;
+}
+
+.titulo:hover{
+  background-color: beige;
+}

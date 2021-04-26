@@ -15,5 +15,6 @@ const sizeStyle = variant({
 });
 
 export const cards = variant({ key: 'cards' });
+export const navbars = variant({ key: 'navbars' });
 
 export { buttonStyle, colorStyle, sizeStyle };
