@@ -9,19 +9,17 @@ import { NewLanguageContext } from '../common/components/Context/NewLanguageCont
 
 const App = () => {
     const [lang] = useContext(NewLanguageContext)
-    let language;
 
-    //console.log("el valor de lang", lang)
+    let language: any;
 
-    if(lang=='es-MX'){
-        language = Spanish;
-    }
-    else{
-        language = English;
-    }
+    if(lang=='es-MX') 
+      language = Spanish;
+    else 
+      language = English;
+
     return (
       <div>
-          <IntlProvider locale={lang} messages={language}>
+          <IntlProvider locale={lang || 'es-ES'} messages={language}>
             <Header/>
             <div className={styles.espacioEjemplo}> 
             <span>&#127474;&#127485;</span>

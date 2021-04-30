@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 
-const LanguageContext = React.createContext()
-const LanguageUpdateContext = React.createContext()
+const LanguageContext = React.createContext(null)
+const LanguageUpdateContext = React.createContext(null)
 
 export function useLanguage(){
     return useContext(LanguageContext)

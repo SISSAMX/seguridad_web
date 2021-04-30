@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import imagen from '../../../assets/siteLogo.png';
-import iconoMenu from '../../../assets/icons8-menú-96.png';
 import 'antd/dist/antd.css';
 import {Row, Col, Menu, Select, Divider, Drawer } from 'antd';
 import { SearchOutlined, MenuOutlined } from '@ant-design/icons';
