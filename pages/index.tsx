@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { NewLanguageContext } from '../common/components/Context/NewLanguageContext';
+import { LanguageContext } from '../common/components/Context/LanguageContext/LanguageContext';
 import App from './App';
 
 const getLenguage = (lng: string, setLanguage: any) => {
@@ -12,8 +12,8 @@ export default function Home(){
     const value = useMemo(() => getLenguage(lang, setLanguage), [lang, setLanguage]);
     
   return (
-    <NewLanguageContext.Provider value={value}>
+    <LanguageContext.Provider value={value}>
       <App/>
-    </NewLanguageContext.Provider>
+    </LanguageContext.Provider>
   )
 }

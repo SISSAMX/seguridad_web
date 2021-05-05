@@ -4,7 +4,7 @@ import iconoMenu from '../../../assets/icons8-menú-96.png';
 import 'antd/dist/antd.css';
 import {Row, Col, Menu, Drawer, Input, Select } from 'antd';
 import { ReadOutlined, CameraOutlined, InteractionOutlined } from '@ant-design/icons';
-import {NewLanguageContext} from '../Context/NewLanguageContext';
+import {LanguageContext} from '../Context/LanguageContext/LanguageContext';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
 const { Search } = Input;
@@ -14,7 +14,7 @@ const css = require('../../../styles/Home.module.css')
 
 
 const HeaderMobile =  ({ intl }) =>{
-    const [lang,setLanguage] = useContext(NewLanguageContext)
+    const [lang,setLanguage] = useContext(LanguageContext)
     const [visible, setVisible] = useState(false);
 
     const onOpenMenu = () =>{
@@ -40,10 +40,13 @@ const HeaderMobile =  ({ intl }) =>{
         {'titulo': 'Anúnciate aquí', 'id':37}
     ]
 
-    const onChangeLanguage = (value) => {
+    const onChangeLanguage = (value: string) => {
         //console.log("ver si llega", value)
         if(value=="es-MX"){
-            setLanguage('es-MX')
+          //  setLanguage('es-MX')
+            setLanguage({
+                lang:'es-MX'
+            })
         }
         else{
             setLanguage('en-US')

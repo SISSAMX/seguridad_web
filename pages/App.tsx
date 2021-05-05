@@ -4,12 +4,12 @@ import Header from '../common/components/Components/headerContainer';
 import {IntlProvider} from 'react-intl';
 import Spanish from '../common/components/languages/es-MX.json';
 import English from '../common/components/languages/en-US.json';
-import { NewLanguageContext } from '../common/components/Context/NewLanguageContext';
-
+import { LanguageContext } from '../common/components/Context/LanguageContext/LanguageContext';
+import TodosProvider, { TodosContext } from "../common/components/Context/TodoContext/TodosContext";
+import Footer from '../common/components/Components/FooterContainer';
 
 const App = () => {
-    const [lang] = useContext(NewLanguageContext)
-
+    const [lang] = useContext(LanguageContext)
     let language: any;
 
     if(lang=='es-MX') 
@@ -21,14 +21,32 @@ const App = () => {
       <div>
           <IntlProvider locale={lang || 'es-ES'} messages={language}>
             <Header/>
-            <div className={styles.espacioEjemplo}> 
-            <span>&#127474;&#127485;</span>
-            <span>&#127482;&#127480;</span>
             <h1>Hola</h1>
-            </div>
+            <Footer/>
           </IntlProvider>
+          
       </div>
     )
   }
-  
-export default App;
+
+const Todos = () => {
+  const { todos, addTodo } = useContext(TodosContext);
+
+  return (
+    <div>
+      <div>
+        {todos.map((todo, i) => (
+          <div key={i}>{todo}</div>
+        ))}
+      </div>
+      <button onClick={() => addTodo("new todo")}>add todo</button>
+    </div>
+  );
+};
+
+export default () => (
+  <TodosProvider>
+   {/*  <Todos /> */}
+    <App/>
+  </TodosProvider>
+);

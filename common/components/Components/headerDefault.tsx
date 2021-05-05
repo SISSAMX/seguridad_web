@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react';
 import imagen from '../../../assets/siteLogo.png';
 import 'antd/dist/antd.css';
-import {Row, Col, Menu, Select, Divider, Drawer } from 'antd';
+import {Row, Col, Menu, Select, Divider } from 'antd';
 import { SearchOutlined, MenuOutlined } from '@ant-design/icons';
 import {injectIntl, FormattedMessage} from 'react-intl';
-import {NewLanguageContext} from '../Context/NewLanguageContext';
+import {LanguageContext} from '../Context/LanguageContext/LanguageContext';
 
 const { Option } = Select;
 const { SubMenu } = Menu;
@@ -12,7 +12,7 @@ const css = require('../../../styles/Home.module.css')
 
 
 const HeaderDefault =  ({ intl }) =>{
-    const [lang,setLanguage] = useContext(NewLanguageContext)
+    const [lang,setLanguage] = useContext(LanguageContext)
     const [searchState, setSearchState] = useState(false);
 
     const onClickSearch = (searchState) =>{
