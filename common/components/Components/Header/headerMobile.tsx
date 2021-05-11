@@ -1,16 +1,16 @@
 import React, { useState, useContext } from 'react';
-import imagen from '../../../assets/siteLogo.png';
-import iconoMenu from '../../../assets/icons8-menú-96.png';
+import imagen from '../../../../assets/siteLogo.png';
+import iconoMenu from '../../../../assets/icons8-menú-24.png';
 import 'antd/dist/antd.css';
 import {Row, Col, Menu, Drawer, Input, Select } from 'antd';
 import { ReadOutlined, CameraOutlined, InteractionOutlined } from '@ant-design/icons';
-import {LanguageContext} from '../Context/LanguageContext/LanguageContext';
+import {LanguageContext} from '../../Context/LanguageContext/LanguageContext';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
 const { Search } = Input;
 const { Option } = Select;
 const { SubMenu } = Menu;
-const css = require('../../../styles/Home.module.css')
+const css = require('../../../../styles/Home.module.css')
 
 
 const HeaderMobile =  ({ intl }) =>{

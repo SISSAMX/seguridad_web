@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router';
 
-import Header from '../../../common/components/Components/headerContainer';
+import Header from '../../../common/components/Components/Header/headerContainer';
 
 const Blog = ({title, body}) =>{
     const router  = useRouter();

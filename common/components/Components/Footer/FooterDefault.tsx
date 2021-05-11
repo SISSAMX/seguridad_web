@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col,  Form, Input, Button } from 'antd';
-import logo from '../../../assets/siteLogo.png';
+import logo from '../../../../assets/siteLogo.png';
 import Link from 'next/link';
 import {
     TwitterOutlined,
@@ -8,7 +8,7 @@ import {
     FacebookOutlined
   } from '@ant-design/icons';
 
-const css = require('../../../styles/Home.module.css')
+const css = require('../../../../styles/Home.module.css')
 
 const FooterDefault =  () =>{
     const [form] = Form.useForm();
@@ -37,7 +37,7 @@ const FooterDefault =  () =>{
                             </Row>
                             <div className={css.espacioImagenTexto}/>
                             <Row>
-                                <p className={css.textoFooter}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla aliquet porttitor lacus luctus. </p>
+                                <p className={css.textoFooter}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             </Row>
                             <Row>
                                 <p className={css.textoFooter}>Síguenos</p>
@@ -118,6 +118,7 @@ const FooterDefault =  () =>{
                         </Col>
                     </Row>
                 </Col>
+                <br/>
             </div>
         </>
     )
