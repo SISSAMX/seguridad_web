@@ -27,7 +27,7 @@ const FooterDefault =  () =>{
     return(
         <>
             <div className={css.fondoFooter}>
-                <Col span={16} offset={4}>
+                <Col span={17} offset={3}>
                     <Row>
                         <Col span={8}>
                             <Row>

@@ -38,7 +38,7 @@ const CarruselCategorias =  () =>{
                 <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
                     <Col span={18} offset={2}>
                         <div className={css.abajo}>
-                            <Col lg={{span:5}}>
+                            <Col lg={{span:6}}>
                             <p className={css.categoriaCarrusel}>Seguridad Pública</p>
                             </Col>
                             <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>
@@ -52,7 +52,7 @@ const CarruselCategorias =  () =>{
                 <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
                     <Col span={18} offset={2}>
                         <div className={css.abajo}>
-                            <Col lg={{span:5}}>
+                            <Col lg={{span:6}}>
                             <p className={css.categoriaCarrusel}>Seguridad Pública</p>
                             </Col>
                             <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>
@@ -66,7 +66,7 @@ const CarruselCategorias =  () =>{
                 <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
                     <Col span={18} offset={2}>
                         <div className={css.abajo}>
-                            <Col lg={{span:5}}>
+                            <Col lg={{span:6}}>
                             <p className={css.categoriaCarrusel}>Seguridad Pública</p>
                             </Col>
                             <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>
