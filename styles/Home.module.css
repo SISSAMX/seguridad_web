@@ -30,6 +30,7 @@
 }
 .fixed{
   position: fixed;
+  z-index:1000;
   width: 100%;
 }
 
@@ -185,4 +186,47 @@
 }
 .fechaTendencia{
   font-size: 11px;
+}
+.descripcion{
+  font-size: 11px;
+}
+.autorCategoria{
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.botonLeerMas{
+  font-size: 10px;
+  height: 50%;
+  border-radius: 0.2em;
+  box-shadow: 0 2px 20px 0 rgba(17, 66, 158, 0.158);
+  transition: all 0.4s ease-out;
+  border-color: #cfcfcf;
+}
+
+.menosEspacio{
+  margin-top: -.7em;
+}
+
+.colorIcono{
+  color:#178fff;
+}
+.colorRojo{
+  color: red;
+}
+.botonSombra{
+  border-radius: 0.2em;
+  box-shadow: 0 2px 20px 0 rgba(17, 66, 158, 0.158);
+  transition: all 0.4s ease-out;
+  border-color: #cfcfcf;
+  width: 100%;
+}
+.tituloCategorias{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: -2.3em;
+}
+.lineaAbajo{
+  border-bottom:2px solid #000;
+  color: rgba(255, 255, 255, 0);
+  padding-bottom: 1.9em;
 }
