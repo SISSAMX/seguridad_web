@@ -4,6 +4,7 @@ import CarruselCategorias from '../common/components/Components/Dashboard/Carrus
 import Tendencias from '../common/components/Components/Dashboard/Tendencias';
 import styles from '../styles/Home.module.css'
 import Categorías from '../common/components/Components/Dashboard/Categoria1';
+import HistoriasPopulares from '../common/components/Components/Dashboard/HistoriasPopulars';
 
 const Dashboard  = () =>(
     <>
@@ -21,7 +22,11 @@ const Dashboard  = () =>(
                 <Col span={15}>
                     <Categorías/>
                 </Col>
+                <Col span={8} offset={1}>
+                    <HistoriasPopulares/>
+                </Col>
             </Row>
+
         </Col>
   {/*   <div className={styles.espacioAbajoDashboard}/> */}
     </>

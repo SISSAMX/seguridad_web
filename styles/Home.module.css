@@ -230,3 +230,47 @@
   color: rgba(255, 255, 255, 0);
   padding-bottom: 1.9em;
 }
+.letrasHistoria{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.numeroGrande{
+  font-size: 2.5em;
+  color: #cfcfcf;
+  font-weight: 500;
+}
+.lineaIzquierda{
+  border-left: 2px solid #dadada83;
+  font-size: 1.25em;
+}
+.shares{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+.colorIconoGris{
+  color: #888787;
+}
+.circuloConNumero{
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  background: #ecebeb;
+  color: #000;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+}
+.letrasTitulo{
+  font-size: 1em;
+  margin-top: -0.5em;
+}
+.lineaAbajoGruesa{
+  width: 100%;
+  border-bottom:3px solid #ecebeb;;
+  padding-bottom: 1.9em;
+  margin-bottom: 1em;
+  margin-top: -.5em;
+}
