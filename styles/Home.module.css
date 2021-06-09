@@ -157,6 +157,11 @@
   width: 100%;
   font-family: 'Roboto Condensed', sans-serif;
 }
+.containerCard{
+  background-color: #f7f7f7;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 .abajo{
   padding-top: 6em;
   bottom: 0;
