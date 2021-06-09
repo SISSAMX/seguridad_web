@@ -65,7 +65,6 @@ const HistoriasPopulares =  () =>{
                 ))}
             </Row>
             <br/>
-            <br/>
         </>
     )
     }
