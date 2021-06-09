@@ -17,10 +17,10 @@ const CarruselCategorias =  () =>{
         <>
             <div>
             <Row>
-                <Col span={5}>
+                <Col lg={{span:5}} xs={{span:11}}>
                     <Button className={css.botonAzul}><QuestionCircleOutlined className={css.iconoPregunta} /> Seguridad Info</Button>
                 </Col>
-                <Col span={19}>
+                <Col lg={{span:19}} xs={{span:13}}>
                     <Input placeholder="Lorem ipstum" suffix={<QuestionOutlined style={{ color: 'rgba(0,0,0,.45)' }} />} />
                 </Col>
             </Row>
@@ -77,6 +77,7 @@ const CarruselCategorias =  () =>{
                 </Card>
             </Col>
             </Carousel>
+            <br/>
             </div>
         </>
     )

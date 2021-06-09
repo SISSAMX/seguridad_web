@@ -5,28 +5,23 @@ import Tendencias from '../common/components/Components/Dashboard/Tendencias';
 import styles from '../styles/Home.module.css'
 import Categorías from '../common/components/Components/Dashboard/Categoria1';
 import HistoriasPopulares from '../common/components/Components/Dashboard/HistoriasPopulars';
+import Categoría2 from '../pages/categoria2Container';
 
 const Dashboard  = () =>(
     <>
     <div className={styles.espacioArribaDashboard}/>
-        <Col  span={17} offset={3}>
+        <Col lg={{span:17, offset:3}} xs={{span:22, offset:1}}>
             <Row>
-                <Col span={15}>
+                <Col lg={{span:15}}>
                     <CarruselCategorias/>
-                </Col>
-                <Col span={8} offset={1}>
-                    <Tendencias/>
-                </Col>
-            </Row>
-            <Row>
-                <Col span={15}>
                     <Categorías/>
+                    <Categoría2/>
                 </Col>
-                <Col span={8} offset={1}>
+                <Col lg={{span:8, offset:1}}>
+                    <Tendencias/>
                     <HistoriasPopulares/>
                 </Col>
             </Row>
-
         </Col>
   {/*   <div className={styles.espacioAbajoDashboard}/> */}
     </>

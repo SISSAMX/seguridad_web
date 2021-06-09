@@ -75,17 +75,16 @@ const Categorías =  () =>{
             </Row>
             <br/>
             <Row>
-                <Col span={8}>
+                <Col lg={{span:8}} xs={{span:7}}>
                     <Divider />
                 </Col>
-                <Col span={6} offset={1}>
-                    <Button className={css.botonSombra}><FormattedMessage id="Load more" defaultMessage="Load more"/></Button>
+                <Col lg={{span:6, offset:1}} xs={{span:8, offset:1}}>
+                    <Button className={css.botonSombra}>Load More</Button>
                 </Col>
-                <Col span={8} offset={1}>
-                    <Divider />
+                <Col lg={{span:8, offset:1}} xs={{span:7}}>
+                    <Divider/>
                 </Col>
             </Row>
-            <br/>
         </>
     )
     }
