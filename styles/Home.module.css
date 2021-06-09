@@ -1,122 +1,178 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.titulo{
+  font: 15px Helevetica, Arial, sans-serif;
+  background-color: azure;
+  padding: 200px;
   text-align: center;
+  transition: 100ms ease-in background;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.titulo:hover{
+  background-color: beige;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.rojo{
+  color: red;
+}
+.imagenLogo{
+  margin-top: 3px;
+  width: 100%;
+}
+.fondo{
+  background-color: #212121;
+  color: white;
+  border-color:  #212121;
+  border-bottom: 1px;
+ /*  font-family: Georgia, Cambria, Times, "Times New Roman"; */
+}
+.fixed{
+  position: fixed;
+  width: 100%;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+.espacioArriba{
+  margin-top: 1em;
+  margin-left: .5em;
+}
+.espacio{
+  width: 100%;
+  margin-top: .4em;
+  margin-bottom: .7em;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.breakText{
+  display: table;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  font-size: 0.85em;
+  font-weight: bold;
+  height: 4em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.dividerColor{
+  border-left: 1px solid white;
+}
+.bordered{
+  border-radius: 1em;
+}
+.iconoMenu{
+  margin-top: .6em;
+  width: 70%;
+}
+.drawer{
+  color: white;
+}
+.fondoFooter{
+  background-color: #212121;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.logoFooter{
+  width: 100%;
+  margin-top: .5em;
+}
+.iconosFooterSinEspacio svg{
+  width: 28px;
+  height: 28px;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.iconosFooter svg{
+  width: 28px;
+  height: 28px;
+  margin-left: 1em;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.iconosEspacio{
+  margin-top: .5em;
 }
-
-.logo {
-  height: 1em;
+.textoDerecha{
+  text-align: right;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.textoFooter{
+  font-size: 14px;
+  font-weight:200;
+}
+.espacioImagenTexto{
+  margin-top: .3em;
+}
+.textoCategorias{
+  font-size: 11px;
+  font-weight:200;
+  margin-top: 2px;
+}
+.espacioFooterAbajo{
+  margin-bottom: 2em;
+}
+.tituloFooter{
+  font-size: 14px;
+  font-weight:500;
+  color: #f93d52;
+}
+.espacioTitulo{
+  margin-top: .9em;
+}
+.textoSpam{
+  font-size: 11px;
+  font-weight:200;
+}
+.botonEnviar{
+  color:white;
+  background-color: #f93d52;
+  border-color: #f93d52;
+  font-weight: 200;
+}
+.espacioArribaDashboard{
+  padding-top: 5em;
+}
+.espacioAbajoDashboard{
+  margin-bottom: 1em;
+}
+.fondoCarrusel{
+  width: 100%;
+}
+.categoriaCarrusel{
+  background-color: #142c6d;
+  color: white;
+  font-size: 11px;
+  padding-left: .2em;
+  text-transform: uppercase;
+}
+.autor{
+  text-transform: uppercase;
+}
+.containerTitulo{
+  max-width: 500px;
+}
+.tituloNoticiaCarrusel{
+  font-weight: bolder;
+}
+.mainDiv{
+  position: relative;
+}
+.containerCarrusel{
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.abajo{
+  padding-top: 6em;
+  bottom: 0;
+  text-align: left;
+}
+.espacioIzquierda{
+  margin-left: 1em;
+}
+.botonAzul{
+  background-color: #142c6d;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 10.5px;
+  font-weight: bolder;
+}
+.iconoPregunta svg{
+  width: 13px;
+  height: 13px;
 }
