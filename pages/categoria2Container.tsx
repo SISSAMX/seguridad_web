@@ -10,7 +10,7 @@ const css = require('../styles/Home.module.css')
 const Categoría2Container =  () =>{
 
     const OperationsSlot = {
-      left:   <><h1 className={css.tituloCategorias2}>Featured Stories</h1><span className={css.lineaAbajo2}>_____</span></>,
+      left:   <><h1 className={css.tituloCategorias2}>Ciberseguridad y TI</h1><span className={css.lineaAbajo2}>_____</span></>,
     };
     
     
