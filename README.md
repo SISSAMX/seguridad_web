@@ -24,6 +24,26 @@ Please make sure to update tests as appropriate.
 
 And if you think I deserve a beer 🍻 or ice cream 🍦, I'll gladly accept it.
 
+## i18n
+For add translate strings into a component:
+
+```
+import useTranslation from "@hooks/useTranslation";
+```
+and destructuring like this: 
+
+```
+const { t, locale } = useTranslation();
+```
+
+Then, to pass data string, add this
+
+```
+{ t("somethingString") }
+```
+
+
+For add translate word ./src/translation/locales/{lang}
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
