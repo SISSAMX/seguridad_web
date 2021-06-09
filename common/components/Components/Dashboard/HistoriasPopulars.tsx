@@ -59,6 +59,7 @@ const HistoriasPopulares =  () =>{
                         </Col>
                         <Col span={20}>
                             <p className={css.letrasTitulo}>{item.titulo}</p>
+                            <div className={css.menosEspacio}/>
                             <p className={css.shares}><ShareAltOutlined className={css.colorIconoGris}/>{item.shares} shares</p>
                         </Col>
                     </Row>

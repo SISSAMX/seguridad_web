@@ -52,11 +52,11 @@ const Categoría3 =  () =>{
                 {menuItems.map((item)=>(
                     <Row>
                         <Col span={10}> 
-                            <img className={css.imagenLogo} src={menuItems[1].imagen}/>
+                            <img className={css.imagenLogo} src={item.imagen}/>
                         </Col>
                         <Col span={13} offset={1}>
-                            <p className={css.letrasTendencia}>{menuItems[1].titulo}</p>
-                            <p className={css.fechaCategorias}><ClockCircleOutlined className={css.colorIcono} /> {moment(menuItems[1].fechaPublicacion).format('MMMM Do YYYY')}</p>
+                            <p className={css.letrasTendencia}>{item.titulo}</p>
+                            <p className={css.fechaCategorias}><ClockCircleOutlined className={css.colorIcono} /> {moment(item.fechaPublicacion).format('MMMM Do YYYY')}</p>
                         </Col>
                     </Row>
                 ))}

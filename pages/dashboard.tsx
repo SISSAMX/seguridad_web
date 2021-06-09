@@ -9,6 +9,7 @@ import Categoría2 from '../pages/categoria2Container';
 import Categoría3Container from './categoria3Container';
 import MiniCarruselCategorias from '../common/components/Components/Dashboard/miniCarruselCategorias';
 import FormEmail from '../common/components/Components/Dashboard/FormEmail';
+import Categoria4 from '../common/components/Components/Dashboard/Categoria4';
 
 const Dashboard  = () =>(
     <>
@@ -26,6 +27,7 @@ const Dashboard  = () =>(
                     <HistoriasPopulares/>
                     <MiniCarruselCategorias/>
                     <FormEmail/>
+                    <Categoria4/>
                 </Col>
             </Row>
         </Col>

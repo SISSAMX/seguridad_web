@@ -85,6 +85,8 @@ const Categorías =  () =>{
                     <Divider/>
                 </Col>
             </Row>
+            <br/>
+            <br/>
         </>
     )
     }

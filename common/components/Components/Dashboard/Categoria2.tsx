@@ -76,7 +76,8 @@ const Categoría2 =  () =>{
                 </Row>
             </Col>
          </Row>
-
+         <br/>
+         <br/>
         </>
     );
   };

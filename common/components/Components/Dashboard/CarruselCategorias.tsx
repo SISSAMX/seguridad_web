@@ -78,6 +78,7 @@ const CarruselCategorias =  () =>{
             </Col>
             </Carousel>
             <br/>
+            <br/>
             </div>
         </>
     )
