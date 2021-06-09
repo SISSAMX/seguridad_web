@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Categorías from '../common/components/Components/Dashboard/Categoria1';
 import HistoriasPopulares from '../common/components/Components/Dashboard/HistoriasPopulars';
 import Categoría2 from '../pages/categoria2Container';
+import Categoría3Container from './categoria3Container';
 
 const Dashboard  = () =>(
     <>
@@ -16,6 +17,7 @@ const Dashboard  = () =>(
                     <CarruselCategorias/>
                     <Categorías/>
                     <Categoría2/>
+                    <Categoría3Container/>
                 </Col>
                 <Col lg={{span:8, offset:1}}>
                     <Tendencias/>

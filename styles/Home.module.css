@@ -285,7 +285,13 @@
 .tituloCategorias2{
   font-size: 1.2em;
   font-weight: bold;
-  margin-right: 8em;
+  margin-right: 6em;
+  margin-bottom: -1.4em;
+}
+.tituloCategorias3{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 11em;
   margin-bottom: -1.4em;
 }
 
@@ -321,6 +327,15 @@
   margin-top: -1em;
   text-transform: uppercase;
   color: #cfcfcf;
+}
+
+.letrasGrandes{
+  font-size: 15px;
+  font-weight: bolder;
+}
+.descripcionGrande{
+  font-size: 13px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 800px) and (min-width: 300px)  {
