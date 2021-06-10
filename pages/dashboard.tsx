@@ -16,17 +16,28 @@ import anuncio2 from '../assets/anuncio2.png';
 import NoTeLoPierdas from '../common/components/Components/Dashboard/NoTeLoPierdas';
 import Categoría5 from '../common/components/Components/Dashboard/Categoria5';
 import SocialNetworks from '../common/components/Components/Dashboard/SocialNetworks';
+import { useMediaQuery } from 'react-responsive'
 
 const css = require('../styles/Home.module.css')
 
+const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+}
+const Default = ({ children }) => {
+    const isNotMobile = useMediaQuery({ minWidth: 768 })
+    return isNotMobile ? children : null
+}
+
 const Dashboard  = () =>(
     <>
-    <div className={styles.espacioArribaDashboard}/>
+     <Default>
+        <div className={styles.espacioArribaDashboard}/>
         <Col lg={{span:17, offset:3}} xs={{span:22, offset:1}}>
             <Row>
                 <Col lg={{span:16}}>
                     <CarruselCategorias/>
-                    <Categorías/>
+                    <Categorías titulo={'Featured Stories'}/>
                     <Categoría2/>
                     <Categoría3Container/>
                 </Col>
@@ -35,7 +46,7 @@ const Dashboard  = () =>(
                     <HistoriasPopulares/>
                     <MiniCarruselCategorias/>
                     <FormEmail/>
-                    <Categoria4/>
+                    <Categoria4 titulo={'Science'}/>
                 </Col>
             </Row>
         </Col>
@@ -50,10 +61,10 @@ const Dashboard  = () =>(
             <Row>
                 <Col lg={{span:16}}>
                     <br/>
-                    <Categorías/>
+                    <Categorías titulo={'Lifestyle'}/>
                 </Col>
                 <Col lg={{span:7, offset:1}}>
-                    <Categoria4/>
+                    <Categoria4 titulo={'Travel'}/>
                 </Col>
             </Row>
         </Col>
@@ -77,11 +88,53 @@ const Dashboard  = () =>(
                     <SocialNetworks/>
                     <NoTeLoPierdas/>
                     <img src={anuncio2} className={css.imagen100}/>
-                    <Categoria4/>
+                    <Categoria4 titulo={'Teach News'}/>
                 </Col>
             </Row>
         </Col>
-  {/*   <div className={styles.espacioAbajoDashboard}/> */}
+        </Default>
+        <Mobile>
+        <div className={styles.espacioArribaDashboard}/>
+        <Col xs={{span:22, offset:1}}>
+                    <CarruselCategorias/>
+                    <Tendencias/>
+                    <Categorías titulo={'Featured Stories'}/>
+                    <HistoriasPopulares/>
+                    <Categoría2/>
+                    <MiniCarruselCategorias/>
+                    <FormEmail/>
+                    <Categoría3Container/>
+                    <Categoria4 titulo={'Science'}/>
+        </Col>
+        <Row>
+            <Card className={css.containerCardNegra}>
+                <SecciónNegra/>
+            </Card>
+        </Row>
+        <br/>
+        <Col xs={{span:22, offset:1}}>
+               <Categorías titulo={'Lifestyle'}/>
+               <Categoria4 titulo={'Travel'}/>
+        </Col>
+        <Row>
+            <Col span={24}>
+                <Card className={css.containerGris}>
+                    <img src={anuncio1} className={css.imagen100}/>
+                </Card>
+            </Col>
+        </Row>
+        <Col xs={{span:22, offset:1}}>
+            <Row>
+                    <br/>
+                    <Categoría5/>
+                    <br/>
+                    <SocialNetworks/>
+                    <NoTeLoPierdas/>
+                    <img src={anuncio2} className={css.imagen100}/>
+                    <Categoria4 titulo={'Teach News'}/>
+            </Row>
+        </Col>
+        </Mobile>
     </>
 );
 

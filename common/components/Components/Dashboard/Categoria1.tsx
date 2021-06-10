@@ -13,7 +13,7 @@ const css = require('../../../../styles/Home.module.css')
 
 
 
-const Categorías =  () =>{
+const Categorías =  (titulo) =>{
     //moment.locale('es');
     moment.locale('en');
     const menuItems = [
@@ -24,7 +24,7 @@ const Categorías =  () =>{
 
     return(
         <>
-        <h1 className={css.tituloCategorias}>Featured Stories</h1><span className={css.lineaAbajo}>_____</span>
+        <h1 className={css.tituloCategorias}>{titulo.titulo}</h1><span className={css.lineaAbajo}>_____</span>
         <Divider/>
             <Row>
                 <Col lg={{span:12}}>

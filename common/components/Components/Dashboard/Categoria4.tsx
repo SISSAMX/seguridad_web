@@ -11,7 +11,7 @@ import {
 const css = require('../../../../styles/Home.module.css')
 
 
-const Categoria4 =  () =>{
+const Categoria4 =  (titulo) =>{
     moment.locale('es');
     //moment.locale('en');
     const menuItems = [
@@ -22,7 +22,7 @@ const Categoria4 =  () =>{
     return(
         <>
         <br/>
-        <h1 className={css.tituloCategorias}>Science</h1><span className={css.lineaAbajo}>_____</span>
+        <h1 className={css.tituloCategorias}>{titulo.titulo}</h1><span className={css.lineaAbajoRoja}>_____</span>
         <Divider/>
         {menuItems.map((item)=>(
             <>
