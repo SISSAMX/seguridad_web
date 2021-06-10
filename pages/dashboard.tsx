@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Row, Col, Menu} from 'antd';
+import {Row, Col, Card} from 'antd';
 import CarruselCategorias from '../common/components/Components/Dashboard/CarruselCategorias';
 import Tendencias from '../common/components/Components/Dashboard/Tendencias';
 import styles from '../styles/Home.module.css'
@@ -10,6 +10,9 @@ import Categoría3Container from './categoria3Container';
 import MiniCarruselCategorias from '../common/components/Components/Dashboard/miniCarruselCategorias';
 import FormEmail from '../common/components/Components/Dashboard/FormEmail';
 import Categoria4 from '../common/components/Components/Dashboard/Categoria4';
+import SecciónNegra from '../common/components/Components/Dashboard/seccionNegra';
+
+const css = require('../styles/Home.module.css')
 
 const Dashboard  = () =>(
     <>
@@ -27,6 +30,24 @@ const Dashboard  = () =>(
                     <HistoriasPopulares/>
                     <MiniCarruselCategorias/>
                     <FormEmail/>
+                    <Categoria4/>
+                </Col>
+            </Row>
+        </Col>
+        <Row>
+            <Card className={css.containerCardNegra}>
+            <Col lg={{span:17, offset:3}} xs={{span:22, offset:1}}>
+                <SecciónNegra/>
+            </Col>
+            </Card>
+        </Row>
+        <Col lg={{span:17, offset:3}} xs={{span:22, offset:1}}>
+            <Row>
+                <Col lg={{span:15}}>
+                    <br/>
+                    <Categorías/>
+                </Col>
+                <Col lg={{span:8, offset:1}}>
                     <Categoria4/>
                 </Col>
             </Row>

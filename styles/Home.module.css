@@ -309,7 +309,6 @@
 .containerImage{
   position: relative;
   text-align: left;
-/*   color: white; */
 }
 .textCenteredImage {
   position: absolute;
@@ -352,6 +351,71 @@
   font-size: 10.5px;
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.containerCardNegra{
+  background-color: #212121;
+  width: 100%;
+  border-color:  #212121;
+  border-bottom: 2px;
+  
+}
+
+.categoriaImage{
+  position: absolute;
+  top: 60%;
+  left: 2.5em;
+  background-color: #142c6d;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10.5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.titleImage{
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 90%;
+  font-size: 1.1em;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+}
+
+.categoriaImageMin{
+  position: absolute;
+  top: 35%;
+  left: 1.8em;
+  background-color: #142c6d;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9.5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.titleImageMin{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 90%;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+}
+
+.textImageMin{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+
+.imagen100{
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) and (min-width: 300px)  {
