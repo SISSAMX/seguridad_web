@@ -38,6 +38,22 @@ const CarruselCategorias =  () =>{
                 <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
                     <Col span={18} offset={2}>
                         <div className={css.abajo}>
+                            <div className={css.espacioAbajoCarrusel}/>
+                            <Col lg={{span:6}}>
+                            <p className={css.categoriaCarrusel}>Seguridad Pública</p>
+                            </Col>
+                            <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>
+                            <span className={css.autor}>De Admin</span>
+                            <span className={css.espacioIzquierda}><ClockCircleOutlined /> {moment(Date.now()).format('MMMM Do YYYY')}</span>
+                        </div>
+                    </Col>
+                </Card>
+            </Col>
+            <Col span={24}>
+                <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
+                    <Col span={18} offset={2}>
+                        <div className={css.abajo}>
+                            <div className={css.espacioAbajoCarrusel}/>
                             <Col lg={{span:6}}>
                             <p className={css.categoriaCarrusel}>Seguridad Pública</p>
                             </Col>
@@ -53,20 +69,7 @@ const CarruselCategorias =  () =>{
                     <Col span={18} offset={2}>
                         <div className={css.abajo}>
                             <Col lg={{span:6}}>
-                            <p className={css.categoriaCarrusel}>Seguridad Pública</p>
-                            </Col>
-                            <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>
-                            <span className={css.autor}>De Admin</span>
-                            <span className={css.espacioIzquierda}><ClockCircleOutlined /> {moment(Date.now()).format('MMMM Do YYYY')}</span>
-                        </div>
-                    </Col>
-                </Card>
-            </Col>
-            <Col span={24}>
-                <Card style={{ backgroundImage: `url(${imagen})`}} className={css.containerCarrusel}>
-                    <Col span={18} offset={2}>
-                        <div className={css.abajo}>
-                            <Col lg={{span:6}}>
+                            <div className={css.espacioAbajoCarrusel}/>
                             <p className={css.categoriaCarrusel}>Seguridad Pública</p>
                             </Col>
                             <h1 className={css.tituloNoticiaCarrusel}>Hombre pierde la vida tras cruzar la calle sin fijarse.</h1>

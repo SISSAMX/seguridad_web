@@ -24,14 +24,14 @@ const Categoría2 =  () =>{
          <Row>
             <Col lg={{span:11}}>
                 <div className={css.containerImage}>
-                    <img className={css.imagenLogo} src={menuItems[0].imagen}/>
+                    <img className={css.imagen100} src={menuItems[0].imagen}/>
                     <p className={css.textCenteredImage}>{menuItems[0].titulo}</p>
                     <p className={css.textCenteredImage2}><ClockCircleOutlined/> {moment(menuItems[0].fechaPublicacion).format('MMMM Do YYYY')}</p>
                 </div>
                 <br/>
                 <Row>
                     <Col span={10}> 
-                        <img className={css.imagenLogo} src={menuItems[1].imagen}/>
+                        <img className={css.imagen100} src={menuItems[1].imagen}/>
                     </Col>
                     <Col span={13} offset={1}>
                         <p className={css.letrasTendencia}>{menuItems[1].titulo}</p>
@@ -40,7 +40,7 @@ const Categoría2 =  () =>{
                 </Row>
                 <Row>
                     <Col span={10}> 
-                        <img className={css.imagenLogo} src={menuItems[2].imagen}/>
+                        <img className={css.imagen100} src={menuItems[2].imagen}/>
                     </Col>
                     <Col span={13} offset={1}>
                         <p className={css.letrasTendencia}>{menuItems[2].titulo}</p>
@@ -51,14 +51,14 @@ const Categoría2 =  () =>{
             
             <Col lg={{span:11, offset:1}}>
                 <div className={css.containerImage}>
-                    <img className={css.imagenLogo} src={menuItems[3].imagen}/>
+                    <img className={css.imagen100} src={menuItems[3].imagen}/>
                     <p className={css.textCenteredImage}>{menuItems[3].titulo}</p>
                     <p className={css.textCenteredImage2}><ClockCircleOutlined/> {moment(menuItems[3].fechaPublicacion).format('MMMM Do YYYY')}</p>
                 </div>
                 <br/>
                 <Row>
                     <Col span={10}> 
-                        <img className={css.imagenLogo} src={menuItems[4].imagen}/>
+                        <img className={css.imagen100} src={menuItems[4].imagen}/>
                     </Col>
                     <Col span={13} offset={1}>
                         <p className={css.letrasTendencia}>{menuItems[4].titulo}</p>
@@ -67,7 +67,7 @@ const Categoría2 =  () =>{
                 </Row>
                 <Row>
                     <Col span={10}> 
-                        <img className={css.imagenLogo} src={menuItems[5].imagen}/>
+                        <img className={css.imagen100} src={menuItems[5].imagen}/>
                     </Col>
                     <Col span={13} offset={1}>
                         <p className={css.letrasTendencia}>{menuItems[5].titulo}</p>

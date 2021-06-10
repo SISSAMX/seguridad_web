@@ -24,7 +24,7 @@ const SecciónNegra =  () =>{
         <br/>
         <Row>
             
-            <Col span={12}>
+            <Col lg={{span:12}} xs={{span:24}}>
                     <Col span={24}>
                         <div className={css.containerImage}>
                             <img className={css.imagen100} src={menuItems[0].imagen}/>
@@ -34,10 +34,10 @@ const SecciónNegra =  () =>{
                         </div>
                     </Col>
             </Col>
-            <Col span={12}>
+            <Col lg={{span:12}} xs={{span:24}}>
             <Row>
             {menuItems.map((item)=>(
-                    <Col lg={{span:12, offset:0}}>
+                    <Col lg={{span:12}} xs={{span:24}}>
                         <div className={css.containerImage}>
                             <img className={css.imagen100} src={menuItems[0].imagen}/>
                             <span className={css.categoriaImageMin}>{menuItems[0].categoria}</span>

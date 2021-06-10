@@ -23,7 +23,7 @@ const Categoría3 =  () =>{
          <Row>
             <Col lg={{span:11}}>
                 <Row>
-                    <img className={css.imagenLogo} src={menuItems[1].imagen}/>
+                    <img className={css.imagen100} src={menuItems[1].imagen}/>
                 </Row>
                 <Row>
                 <p className={css.letrasGrandes}>{menuItems[1].titulo}</p>
@@ -52,7 +52,7 @@ const Categoría3 =  () =>{
                 {menuItems.map((item)=>(
                     <Row>
                         <Col span={10}> 
-                            <img className={css.imagenLogo} src={item.imagen}/>
+                            <img className={css.imagen100} src={item.imagen}/>
                         </Col>
                         <Col span={13} offset={1}>
                             <p className={css.letrasTendencia}>{item.titulo}</p>
