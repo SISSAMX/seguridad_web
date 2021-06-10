@@ -1,6 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive'
 import FooterDefault from './FooterDefault';
+import FooterMobile from './FooterMobile';
 
 const FooterContainer =  () =>{
     const Mobile = ({ children }) => {
@@ -20,7 +21,7 @@ const FooterContainer =  () =>{
                         <FooterDefault/>
                     </Default>
                     <Mobile>
-                        <h1>Hola</h1>
+                        <FooterMobile/>
                     </Mobile>
                 </footer>
             </div>

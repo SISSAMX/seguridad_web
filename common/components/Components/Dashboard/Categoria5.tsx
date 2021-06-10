@@ -65,7 +65,7 @@ const Categoría5 =  () =>{
                  ))}
             </Row> 
             <br/>
-                <Pagination /*onChange={onChange}*/ total={100} style={{textAlign:"center"}} pageSize={10}/>
+                <Pagination  size="small" /*onChange={onChange}*/ total={50} style={{textAlign:"center"}} pageSize={6}/>
         </>
     )
     }

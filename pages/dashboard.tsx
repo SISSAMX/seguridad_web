@@ -15,6 +15,7 @@ import anuncio1 from '../assets/anuncio1.png';
 import anuncio2 from '../assets/anuncio2.png';
 import NoTeLoPierdas from '../common/components/Components/Dashboard/NoTeLoPierdas';
 import Categoría5 from '../common/components/Components/Dashboard/Categoria5';
+import SocialNetworks from '../common/components/Components/Dashboard/SocialNetworks';
 
 const css = require('../styles/Home.module.css')
 
@@ -73,6 +74,7 @@ const Dashboard  = () =>(
                     <br/>
                 </Col>
                 <Col lg={{span:7, offset:1}}>
+                    <SocialNetworks/>
                     <NoTeLoPierdas/>
                     <img src={anuncio2} className={css.imagen100}/>
                     <Categoria4/>
